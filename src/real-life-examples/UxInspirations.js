@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, WebView, ActivityIndicator } from 'react-native';
-
+import { StyleSheet, View, ActivityIndicator } from 'react-native';
+import {WebView} from 'react-native-webview'
 const injectedJs =
   '[].forEach.call(document.querySelectorAll("img"),function(e){e.parentNode.removeChild(e);});' +
   '[].forEach.call(document.querySelectorAll("div.breadcrumb"),function(e){e.parentNode.removeChild(e);});' +
